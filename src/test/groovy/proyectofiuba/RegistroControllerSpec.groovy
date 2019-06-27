@@ -1,9 +1,9 @@
 package proyectofiuba
 
-import grails.testing.gorm.DomainUnitTest
+import grails.testing.web.controllers.ControllerUnitTest
 import spock.lang.Specification
 
-class UsuarioSpec extends Specification implements DomainUnitTest<Usuario> {
+class RegistroControllerSpec extends Specification implements ControllerUnitTest<RegistroController> {
 
     def setup() {
     }
@@ -15,5 +15,4 @@ class UsuarioSpec extends Specification implements DomainUnitTest<Usuario> {
         expect:"fix me"
             true == false
     }
-   
 }

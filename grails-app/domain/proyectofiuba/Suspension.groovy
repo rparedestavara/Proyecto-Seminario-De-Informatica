@@ -3,7 +3,9 @@ package proyectofiuba
 class Suspension {
     Date fechaInicio
     Date fechaFinal
-    String motivo
+    int motivo
+    
+    
     
     static constraints = {
         fechaInicio blank: false, nullable: false

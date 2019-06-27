@@ -15,4 +15,7 @@ class CategoriaSpec extends Specification implements DomainUnitTest<Categoria> {
         expect:"fix me"
             true == false
     }
+    void "test usuario hace una compra de un producto"(){
+    	
+    }
 }

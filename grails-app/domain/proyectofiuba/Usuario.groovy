@@ -1,20 +1,35 @@
 package proyectofiuba
 
 class Usuario {
-    String nombredeusuario
+    String nombre
+    String usuario
     String contrasenia
     int idUsuario
+    String correo
+    Operacion operacion ;
+
     
-    Usuario(String nombre,String contrasenia,int id){
-        this.nombredeusuario=nombre
+    Usuario(String usuario,String contrasenia,String nombre,String correo){
+        this.nombre=nombre
         this.contrasenia=contrasenia
-        this.idUsuario=id
+        this.usuario=usuario
+        this.correo=correo
+        this.idUsuario=0
     }
 
-    
+     Void agregarAlCarro(producto){
+        this.operacion.agregarProducto(producto)
+     }
+
+
+    Void comprar(){
+        operacion.pagar()
+     }  
+
+
 
     static constraints = {
-    nombredeusuario blank:false, nullable:false
+    nombre blank:false, nullable:false
     contrasenia blank:false, nullable:false
     }
 }

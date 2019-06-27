@@ -3,7 +3,7 @@ package proyectofiuba
 import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 
-class UsuarioSpec extends Specification implements DomainUnitTest<Usuario> {
+class EstadoDeOperacionSpec extends Specification implements DomainUnitTest<EstadoDeOperacion> {
 
     def setup() {
     }
@@ -15,5 +15,4 @@ class UsuarioSpec extends Specification implements DomainUnitTest<Usuario> {
         expect:"fix me"
             true == false
     }
-   
 }

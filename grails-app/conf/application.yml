@@ -96,7 +96,7 @@ dataSource:
 environments:
     development:
         dataSource:
-            dbCreate: create-drop            
+            dbCreate: create            
             logSqul: true
             username: root
             password: '1234'
