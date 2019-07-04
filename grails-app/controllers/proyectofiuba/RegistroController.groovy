@@ -25,14 +25,14 @@ class RegistroController {
     }
 
     def registrar_producto(Producto produc){
-                if(user.hasErrors()){
+                if(produc.hasErrors()){
             render(view: "index", model: [us: produc])
         }
 
     }
     
     def registrar_categoria(Categoria catego){
-                if(user.hasErrors()){
+                if(catego.hasErrors()){
             render(view: "index", model: [us: catego])
         }
 
