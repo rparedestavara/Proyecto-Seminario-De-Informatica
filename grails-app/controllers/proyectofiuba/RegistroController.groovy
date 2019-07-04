@@ -24,6 +24,9 @@ class RegistroController {
     	redirect(action: "login",params: [us: user])
     }
 
+    def registrar_producto(){
+        
+    }
     def registroExitoso(){
     	
     }
