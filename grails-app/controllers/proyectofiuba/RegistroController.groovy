@@ -24,6 +24,19 @@ class RegistroController {
     	redirect(action: "login",params: [us: user])
     }
 
+    def registrar_producto(Producto produc){
+                if(produc.hasErrors()){
+            render(view: "index", model: [us: produc])
+        }
+
+    }
+    
+    def registrar_categoria(Categoria catego){
+                if(catego.hasErrors()){
+            render(view: "index", model: [us: catego])
+        }
+
+    }
     def registroExitoso(){
     	
     }

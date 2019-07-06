@@ -25,5 +25,27 @@
         </ul>
     </g:hasErrors>
   </g:form>
+    
+      <g:form controller="registro" action="registrar_producto">
+     Codigo: <input type="text" name="codigo" />
+    <br/>
+   
+    Producto: <input type="text" name="producto" />
+    <br/>
+    Tipo: <input type="text" name="nuevoousado" />
+    <br/>
+    Precio: <input type="text" name="precio" />
+    <br/>
+    <button type="submit">enviar</button>
+  </g:form>
+    
+    <g:form controller="registro" action="registrar_categoria">
+        Codigo: <input type="text" name="codigo" />
+        <br/>
+        Producto: <input type="text" name="producto" />
+        <br/>
+        
+        <button type="submit">enviar</button>
+     </g:form>
 </body>
 </html>
