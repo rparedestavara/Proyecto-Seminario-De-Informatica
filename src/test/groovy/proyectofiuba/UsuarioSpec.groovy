@@ -12,8 +12,14 @@ class UsuarioSpec extends Specification implements DomainUnitTest<Usuario> {
     }
 
     void "test something"() {
-        expect:"fix me"
-            true == false
+    	given:
+    		Usuario  usu= new Usuario("pepe","123","pepe","123");
+            usu.addToOperaciones(new Operacion())
+    	when:
+        	usu.validate()
+            //usu.save()
+        then:
+        	!usu.hasErrors()
     }
    
 }

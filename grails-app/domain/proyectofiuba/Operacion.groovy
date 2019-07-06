@@ -13,8 +13,8 @@ class Operacion {
     Usuario usuarioVendedor
     String calificacion
     Estado estadoDeOperacion = Estado.SIN_CALIFICAR;
-    Set<Producto> productos=[]
-
+    
+    static hasMany = [productos: Producto]
 
     Operacion(Usuario comprador , Usuario vendedor){
         this.usuariocomprador = comprador
@@ -22,7 +22,7 @@ class Operacion {
     }
 
     boolean esUsuarioVendedor(Usuario usuario){
-        this.usuarioVendedor=usuario
+        this.usuarioVendedor==usuario
     }
 
     boolean esUsuarioComprador(Usuario usuario){

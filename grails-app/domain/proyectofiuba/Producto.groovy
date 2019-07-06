@@ -5,7 +5,10 @@ class Producto {
     String nombre
     int precio
     String calificacion
-    
+
+    static hasMany = [operacion: Operacion]
+
+    static belongsTo = Operacion
     
     
     static constraints = {

@@ -17,6 +17,13 @@
     Email: <input type="email" name="correo" />
     <br/>
     <button type="submit">enviar</button>
+        <g:hasErrors bean="${us}">
+        <ul>
+            <g:eachError var="err" bean="${us}">
+                <li>${err}</li>
+            </g:eachError>
+        </ul>
+    </g:hasErrors>
   </g:form>
 </body>
 </html>
