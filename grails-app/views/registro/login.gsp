@@ -17,6 +17,8 @@
     	<br/>
     	Contraseña: <input type="password" nome="pass"/>
     	<br/>
+         <button type="submit">enviar</button>
+       <br/>
     </g:form> 	
     <g:link>
     	<button controller="registro" action="index" type="button">Si no estas registrado podes registrarte haciendo click</button>

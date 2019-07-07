@@ -37,6 +37,13 @@
     Precio: <input type="text" name="precio" />
     <br/>
     <button type="submit">enviar</button>
+        <g:hasErrors bean="${us}">
+        <ul>
+            <g:eachError var="err" bean="${us}">
+                <li>${err}</li>
+            </g:eachError>
+        </ul>
+    </g:hasErrors>
   </g:form>
     
     <g:form controller="registro" action="registrar_categoria">
@@ -44,8 +51,17 @@
         <br/>
         Producto: <input type="text" name="producto" />
         <br/>
+        Tipo: <input type="text" name="tipo" />
+        <br/>
         
         <button type="submit">enviar</button>
-     </g:form>
+        <g:hasErrors bean="${us}">
+        <ul>
+            <g:eachError var="err" bean="${us}">
+                <li>${err}</li>
+            </g:eachError>
+        </ul>
+    </g:hasErrors> 
+    </g:form>
 </body>
 </html>
